@@ -8,7 +8,6 @@ import handlebars from 'vite-plugin-handlebars';
 //import handlerBarsContext from './variables.js';
 
 export default defineConfig({
-    base: "/",
     appType: 'mpa',
     
     build: {
@@ -30,5 +29,6 @@ export default defineConfig({
         }),
         htmlPurge({}),
         ViteMinifyPlugin({}),
-    ]
+    ],
+    base:"/proyecto_final-pw2/"
 })
