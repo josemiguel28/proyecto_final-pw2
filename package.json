@@ -9,8 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "glob": "^10.3.10",
+    "less": "^4.2.0",
     "sass": "^1.69.5",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-handlebars": "^1.6.0",
+    "vite-plugin-minify": "^1.5.2",
+    "vite-plugin-purgecss": "^0.2.12"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
