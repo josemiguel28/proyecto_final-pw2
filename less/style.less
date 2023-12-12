@@ -12,7 +12,6 @@
 @import url('/less/acercaDe.less');
 
 
-
 //color styles
 @primary: #fac005;
 @secondary-color: #1dae12;
@@ -49,7 +48,7 @@
   @tablet-l: 1024;
 }
 
-text-hero-bold{
+text-hero-bold {
   font-weight: @font-weight-bold;
   font-size: @header-3;
   line-height: 64px;
@@ -91,10 +90,9 @@ body {
   background-color: @secondary-color;
 }
 
-.btn-section2:hover{
+.btn-section2:hover {
   background-color: @third-color;
 }
-
 
 
 /* NAVBAR */
@@ -194,16 +192,16 @@ a:hover::before {
   a.nav-link {
     margin-right: 7px;
   }
-  
+
   /* HERO */
-  section{
-    .container{
-      .img-hero{
+  section {
+    .container {
+      .img-hero {
         padding-bottom: 20px;
       }
     }
   }
-  
+
   .text-hero-bold {
     font-weight: @font-weight-bold;
     font-size: @header-3;
@@ -224,8 +222,6 @@ a:hover::before {
     margin-bottom: 5px;
   }
 
-  
-
 
   .logo {
     width: 60px;
@@ -233,7 +229,6 @@ a:hover::before {
   }
 
   /* HERO */
-  
   .text-hero-bold {
     font-weight: @font-weight-bold;
     font-size: @header-3;
@@ -251,7 +246,7 @@ a:hover::before {
 /* MOBILE VERSION ONLY */
 
 @media (max-width: 468px) {
-  
+
   /* NAVBAR */
   .container {
     display: flex;
@@ -263,7 +258,7 @@ a:hover::before {
         height: 65px;
       }
     }
-    
+
   }
 
   .navbar {
@@ -275,11 +270,12 @@ a:hover::before {
   a.nav-link {
     margin-bottom: 7px;
   }
-  
+
   /* HERO */
-  .btn{
+  .btn {
     width: 100%;
   }
+
   .ms-3 {
     margin-left: 0 !important;
   }
@@ -291,17 +287,17 @@ a:hover::before {
   }
 
   .text-hero-bold,
-  .text-section-bold{
+  .text-section-bold {
     font-weight: @font-weight-bold;
     font-size: @header-3;
     line-height: 64px;
   }
 
-  section{
-    .container{
-      .row{
-        .text-container{
-          .text-section-bold{
+  section {
+    .container {
+      .row {
+        .text-container {
+          .text-section-bold {
             font-weight: @font-weight-bold;
             font-size: @header-1;
             line-height: 64px;
@@ -310,17 +306,19 @@ a:hover::before {
       }
     }
   }
+
   .container {
     .row {
       .img-hero {
         order: -1;
         margin-bottom: -3rem;
       }
-      
-      .btn-ordenar-section2{
-          flex-direction: column-reverse;
+
+      .btn-ordenar-section2 {
+        flex-direction: column-reverse;
       }
-      .btn-section2:hover{
+
+      .btn-section2:hover {
         background-color: @third-color;
       }
     }
