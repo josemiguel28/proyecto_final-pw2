@@ -1,26 +1,32 @@
 /* HERO */
+section {
+  .container {
+    .row {
+      .text-hero-bold {
+        margin: 24px 0;
+        font-family: 'Kaushan Script', cursive;
 
-.container {
-  .row {
-    .img-hero {
-      margin-bottom: 6rem;
+        span {
+          color: @third-color;
+          font-family: 'Kaushan Script', cursive;
+        }
+      }
+
+      .text-hero-regular {
+        margin: 24px 0;
+        color: @gray-1;
+        font-size: @text-large;
+        font-weight: @font-weight-regular;
+        line-height: 31px;
+        font-family: 'Katibeh', serif;
+      }
+      
+      .btn{
+        font-family: Poppins,"sans-serif";
+
+      }
     }
   }
-}
-
-.text-label,
-.text-hero-bold,
-.text-hero-regular {
-  margin: 24px 0;
-  font-weight: lighter;
-  font-family: 'Kaushan Script', cursive;
-}
-
-.text-label {
-  color: @primary;
-  font-size: @text-regular;
-  font-weight: @font-weight-regular;
-  line-height: 31px;
 }
 
 .text-hero-bold {
@@ -30,18 +36,75 @@
   line-height: 74px;
 }
 
-.text-hero-bold span {
-  color: @third-color;
-  font-family: 'Kaushan Script', cursive;
 
+/** CUSTOM MEDIA QUERIES **/
+
+//mobile version <576px
+@media (max-width: 576px) {
+
+  /* NAVBAR */
+  
+  /* HERO */
+  section {
+    .container {
+
+      .text-hero-bold,
+      .text-hero-regular {
+        text-align: center;
+      }
+
+      .text-hero-bold,
+      .text-section-bold {
+        font-weight: @font-weight-bold;
+        font-size: @header-3;
+        line-height: 64px;
+      }
+
+      .img-hero {
+        order: -1;
+        margin-bottom: 12px;
+      }
+
+      .btn {
+        width: 100%;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+  /* HERO */
+  section {
+    .container {
+      .text-hero-bold {
+        font-weight: @font-weight-bold;
+        font-size: @header-3;
+        line-height: 64px;
+      }
+      .img-hero {
+        margin: 2rem 0;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  section{
+    .container{
+      .text-hero-bold{
+        font-size: @header-1;
+        line-height: 64px;
+      }
+    }
+  }
 }
 
 
-.text-hero-regular {
-  color: @gray-1;
-  font-size: @text-large;
-  font-weight: @font-weight-regular;
-  line-height: 31px;
-  font-family: 'Katibeh', serif;
-}
+
+
 
