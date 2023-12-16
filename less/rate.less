@@ -1,11 +1,10 @@
 section {
   .container-rate {
-    margin-top: -3rem;
 
     h1 {
-      .text-hero-bold();
-      font-weight: normal;
-      font-size: 48px;
+      font-family: Katibeh , sans-serif;
+      font-size: @header-2;
+      font-weight: bold;
     }
 
     hr {
@@ -19,6 +18,18 @@ section {
       line-height: normal;
       font-style: italic;
       font-weight: normal;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  section{
+    .container-rate{
+
+      h1{
+        font-size: @header-1;
+        font-weight: normal;
+      }
     }
   }
 }
