@@ -1,28 +1,30 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white pb-5">
-    <div class="container ">
+<nav class="navbar navbar-expand-lg">
+    <div class="container d-flex">
         <a class="navbar-brand" href="/proyecto_final-pw2/index.html">
-            <img class="logo" src="/img/logo.png" alt="logo">
+
+            <picture>
+                <source srcset="img/logo.avif" type="image/avif" />
+                <source srcset="img/logo.webp" type="image/webp" />
+                <img class="logo" loading="lazy" width="200" height="300" src="img/logo.jpg" alt="logo" />
+            </picture>
         </a>
 
-        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <i class="bx bx-menu"></i>
+        <button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto ">
+        <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="/proyecto_final-pw2/index.html">Inicio</a>
                 <a class="nav-link" href="/proyecto_final-pw2/html/menu.html">Menu</a>
                 <a class="nav-link" href="/proyecto_final-pw2/html/promociones.html">Promociones</a>
-                <a class="nav-link" href="/proyecto_final-pw2/html/acercaDe.html">Acerca de Nosotros</a>
+                <a class="nav-link" href="/proyecto_final-pw2/html/acercaDe.html">Acerca
+                    de Nosotros</a>
                 <a href="/proyecto_final-pw2/html/menu.html" class="btn btn-primary shadow-none">Ordenar Ahora</a>
             </div>
 
-            <div class="carrito">
-                <a href="#ordenar"><img style="width: 65px; height: 55px;" src="/img/carrito_logo.png"
-                                        alt="carrito"></a>
-            </div>
         </div>
 
     </div>

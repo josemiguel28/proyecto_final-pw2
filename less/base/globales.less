@@ -1,0 +1,53 @@
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* BUTTON PRIMARY */
+
+.btn{
+  padding: 15px 25px;
+  background-color: @primary;
+  border: none;
+  font-family: Poppins, serif;
+}
+
+
+.btn-primary:focus {
+  background-color: @secondary-color;
+}
+
+.btn-primary:hover {
+  background-color: @secondary-color;
+}
+
+.btn-section2:hover {
+  background-color: @third-color;
+}
+
+h2 {
+  color: #000;
+  font-family: "Katibeh", serif;
+  font-size: 46px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin: 30px 0 70px;
+}
+h2::after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 4px;
+  border-radius: 1px;
+  background: @primary;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+}
